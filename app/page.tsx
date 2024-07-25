@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-import styles from "./page.module.css";
 import { BaseApp } from "@/components/BaseApp";
 
 export default function Home() {
@@ -20,5 +19,5 @@ export default function Home() {
     };
   }, []);
 
-  return <div ref={containerRef} className={styles.main}></div>;
+  return <div ref={containerRef} className="h-dvh"></div>;
 }
