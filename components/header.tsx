@@ -9,12 +9,13 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { NavDesktop, NavMobile } from "@/components/nav";
+import IconGitHub from "@/components/icons/github.svg";
 
 export function Header() {
   return (
     <header className="static top-0 py-4 md:sticky">
       <div className="container flex flex-row items-center justify-between px-6">
-        <Link href="/" className="text-l font-bold md:text-xl">
+        <Link href="/" className="text-l font-bold md:text-xl leading-tight">
           WebXR Tutorial
         </Link>
 
@@ -22,11 +23,19 @@ export function Header() {
           <NavDesktop></NavDesktop>
         </div>
 
-        <div>
-          <div className="md:hidden">
+        <div className="flex flex-row gap-3 items-center">
+          <Link
+            href="https://github.com/hblee12294/webxr-tutorial"
+            target="_blank"
+          >
+            <IconGitHub height={22} width={22}></IconGitHub>
+          </Link>
+
+          <div className="flex md:hidden">
             <Sheet>
               <SheetTrigger>
                 <Menu size="24" />
+
                 <span className="sr-only">Toggle navigation menu</span>
               </SheetTrigger>
 

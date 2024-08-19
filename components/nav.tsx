@@ -50,7 +50,7 @@ export function NavMobile() {
   const pathname = usePathname();
 
   return (
-    <nav className="grid gap-6 text-lg">
+    <nav className="grid gap-6 text-lg mt-10">
       {navs.map(({ name, href }) => (
         <Link
           key={href}
