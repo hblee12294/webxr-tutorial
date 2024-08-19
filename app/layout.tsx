@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
+import { Header } from "@/components/header";
+import { cn } from "@/lib/utils";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn("flex flex-col min-h-screen", inter.className)}>
+        <Header></Header>
+
         {children}
 
         <Analytics />

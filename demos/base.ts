@@ -4,6 +4,7 @@ import {
   PerspectiveCamera,
   GridHelper,
   AxesHelper,
+  Color,
 } from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
@@ -26,6 +27,7 @@ export class BaseApp {
     this._container.prepend(this._renderer.domElement);
 
     this._scene = new Scene();
+    this._scene.background = new Color(0xffffff);
 
     this._camera = new PerspectiveCamera(75, 1, 0.1, 100);
     this._camera.position.set(1, 2, 1);

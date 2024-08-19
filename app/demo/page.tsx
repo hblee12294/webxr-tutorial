@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-import { BaseApp } from "@/components/BaseApp";
+import { BaseApp } from "@/demos/base";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
