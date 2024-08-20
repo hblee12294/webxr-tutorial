@@ -16,8 +16,8 @@ const navs: Nav[] = [
     href: "/",
   },
   {
-    name: "Demo",
-    href: "/demo",
+    name: "Demos",
+    href: "/demos",
   },
   {
     name: "Resources",
