@@ -13,7 +13,7 @@ import IconGitHub from "@/components/icons/github.svg";
 
 export function Header() {
   return (
-    <header className="static top-0 py-4 backdrop-blur bg-white/80 md:sticky">
+    <header className="z-10 static top-0 py-4 backdrop-blur bg-white/80 md:sticky">
       <div className="container flex flex-row items-center justify-between px-6">
         <Link href="/" className="text-l font-bold md:text-xl leading-tight">
           WebXR Tutorial
