@@ -27,6 +27,7 @@ const navs: Nav[] = [
 
 export function NavDesktop() {
   const pathname = usePathname();
+  const navRoute = pathname.split("/")[1];
 
   return (
     <nav className="grid grid-flow-col gap-4 md:gap-8 lg:gap-12">
@@ -36,7 +37,7 @@ export function NavDesktop() {
           href={href}
           className={cn(
             "text-foreground py-4 transition-colors hover:text-foreground",
-            pathname === href && "font-semibold",
+            `/${navRoute}` === href && "font-semibold",
           )}
         >
           {name}
