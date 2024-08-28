@@ -6,19 +6,21 @@
    - **Combining Experiences**: With WebXR, users can access these experiences without needing to download apps or use specialized hardware—just a browser and a compatible device.
 
 ## Why WebXR Matters
-   - **Growing Importance**: As immersive experiences become more mainstream, the demand for accessible and cross-platform solutions is increasing. WebXR enables developers to create experiences that can be accessed on any device with a modern browser, making it easier to reach a broad audience.
-   - **Advantages**: Compared to traditional VR/AR development, WebXR offers several advantages: it’s cross-platform, requires no installations, and leverages existing web technologies. This makes development more streamlined and reduces barriers for users.
-   - **Industry Adoption**: Major companies like Google, Mozilla, and Facebook are investing in WebXR, and it’s being used in various industries—from gaming and education to healthcare and e-commerce.
+   - **Cross-platform**: WebXR is inherently cross-platform, allowing developers to create immersive experiences that work across a wide range of devices, from desktop computers to mobile phones, VR headsets, and AR glasses. Since it runs in the browser, users can access these experiences without worrying about device compatibility.
+   - **Lightweight**: Compared to traditional VR/AR development, WebXR is lightweight and doesn’t require users to install large applications or specialized software. Everything is delivered through the web, making it easy for users to jump right into the experience with just a click, ensuring quick and seamless access.
+   - **Friendly to Front-End Developers**: WebXR leverages existing web technologies like HTML, CSS, and JavaScript, making it highly accessible to front-end developers. If you’re already familiar with web development, transitioning to WebXR is relatively straightforward, allowing you to apply your existing skills to build immersive, interactive experiences.
 
 ## How WebXR Works
    - **WebXR Device API**: At the core of WebXR is the WebXR Device API. It provides access to VR and AR devices, allowing developers to query device capabilities, render 3D scenes, and interact with the user’s environment.
    - **Web Technologies**: WebXR is built on top of existing web technologies like WebGL, which handles rendering, and WebRTC, which can be used for real-time communications. Together, these technologies enable rich, interactive experiences in the browser.
-   - **Example**: Let’s take a quick look at a simple WebXR application. Here, we have a basic VR scene rendered using Three.js. The code is straightforward: we set up a scene, add a few 3D objects, and then use the WebXR API to enable VR mode. The user can enter VR with a single click, right from their browser.
+   - **Example**: [WebXR Dragging](/demos/dragging)
 
-## Tools and Frameworks for WebXR Development
+## Frameworks and Tools for WebXR Development
    - **A-Frame**: A-Frame is a powerful framework built on top of Three.js that simplifies the creation of WebXR experiences. It uses a declarative, HTML-like syntax, making it easy to pick up for developers already familiar with web development.
    - **Three.js and Babylon.js**: For those who need more control, Three.js and Babylon.js offer more advanced features. Both are well-suited for WebXR and have strong communities and extensive documentation.
-   - **Developer Tools**: To aid development, tools like the WebXR emulator and browser developer tools can simulate XR devices, helping you test and debug your applications without needing physical hardware.
+   - **React Three Fiber**: If you’re working with React and you're completely new to Three.js, React Three Fiber is an excellent option. It’s a React renderer for Three.js, allowing you to build 3D scenes using React components. This integration makes it easier to manage complex state and UI interactions in your WebXR applications, especially if you’re already comfortable with React.
+   - **Bezi**: Bezi is a newer framework designed for building immersive experiences with a focus on simplicity and flexibility. It offers an intuitive API that makes it easier to create complex interactions in WebXR, while also being lightweight and efficient.
+   - **Spline**: Spline is a design tool that enables you to create and share 3D web experiences with ease. It’s particularly useful for designers who want to create interactive 3D scenes and animations without diving deep into code, making it a great complement to WebXR development.
 
 ## Challenges and Best Practices
    - **Common Challenges**: WebXR development does come with its challenges. Performance optimization is crucial since immersive experiences require real-time rendering. Device compatibility can also be tricky, as not all browsers or devices fully support WebXR yet.
