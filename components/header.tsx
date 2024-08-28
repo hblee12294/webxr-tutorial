@@ -23,7 +23,7 @@ export function Header() {
           <NavDesktop></NavDesktop>
         </div>
 
-        <div className="flex flex-row gap-3 items-center">
+        <div className="flex flex-row justify-end gap-3 items-center min-w-[150px]">
           <Link
             href="https://github.com/hblee12294/webxr-tutorial"
             target="_blank"
