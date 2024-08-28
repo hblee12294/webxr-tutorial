@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-import { Header } from "@/components/header";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn("flex flex-col min-h-screen", inter.className)}>
-        <Header></Header>
-
+      <body className={cn(inter.className)}>
         {children}
 
         <Analytics />

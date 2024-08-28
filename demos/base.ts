@@ -47,7 +47,7 @@ export class BaseApp {
   }
 
   public start = () => {
-    this._renderer.setAnimationLoop(this._update);
+    this._renderer.setAnimationLoop(this._render);
   };
 
   public dispose = () => {
@@ -58,7 +58,7 @@ export class BaseApp {
     window.removeEventListener("resize", this._onWindowResize);
   };
 
-  private _update = () => {
+  private _render = () => {
     this._renderer.render(this._scene, this._camera);
   };
 

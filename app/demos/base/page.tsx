@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 import { BaseApp } from "@/demos/base";
 
-export default function Home() {
+export default function Page() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -19,5 +19,5 @@ export default function Home() {
     };
   }, []);
 
-  return <div ref={containerRef} className="h-dvh"></div>;
+  return <div ref={containerRef} className="size-full"></div>;
 }
